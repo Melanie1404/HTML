@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pastry</title>
+    <style>
+      #home {
+        background-color: rgb(255, 255, 255);
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+      }
+      #contact{
+        background-color: blanchedalmond;
+      }
+      
+      
+    </style>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="navBar">
+      <img src="img.jpeg" alt="logo" class="center" />
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#aboutus">About us</a>
+        </li>
+        <li>
+          <a href="#pastries">Pastries</a>
+        </li>
+        <li>
+          <a href="#contact">Contact us</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="home" id="home">
+        <h1
+          style="
+            color: rgb(114, 158, 240);
+            text-align: center;
+            font-style: italic;
+            background-color: cornsilk;
+          "
+        >
+          Welcome to Esperance Pastries!
+        </h1>
+        <form action="#home" method="post" class="f">
+          <label for="search">search</label>
+          <input type="text" name="search" />
+        </form>
+      </section>
+      <section class="aboutus" id="aboutus">
+        <h3 style="font-style: oblique;">About us..</h3>
+        <p style="text-align: justify; font-style: oblique;">
+          Welcome to Esperance pastries, where every bite is a taste of
+          paradise. Founded on a passion for creating the finest pastries, our
+          bakery offers a wide array of sweet treats and savory delights, all
+          crafted with love and the highest quality ingredients. From our flaky
+          croissants and decadent cakes to our artisan breads and delightful
+          cookies, we strive to bring a touch of sweetness to your day.
+          <h3 style="background-color: antiquewhite; text-align: center;">~Our classics~</h3>
+          <img src="c.jpeg"/>  <img src="e.jpeg" />  <img  src="m.jpeg" />  <img  src="cb.jpeg" />
+        </p>
+      </section>
+      <section class="pastries" id="pastries">
+        
+
+        <h3 > Would you like to order?</h3>
+        <label for="name">Name:</label>
+        <input type="text" name="name" />
+        <br />
+        <label for="tel">Contact:</label>
+        <input type="number" name="tel" />
+        <br />
+        <label for="mail">Email:</label>
+        <input type="email" name="mail" />
+        <br />
+        <label for="pastry">Choose your delicacy:</label>
+        <select id="pastry" name="pastry">
+          <option value="select">--select--</option>
+          <option value="Croissant">Croissant</option>
+          <option value="eclair">Éclair</option>
+          <option value="Macaron">Macaron</option>
+          <option value="Doughnut">Doughnut</option>
+          <option value="Cookies">Cookies</option>
+          <option value="Crème">Crème brûlée</option>
+          <option value="Soufflé">Soufflé</option>
+        </select>
+        <br />
+        <button class="sub">submit</button>
+        <section class="contact" id="contact">
+          <h4>Contact us</h4>
+          <p>
+            <b>#43 street</b>
+            <br />
+            Tel:97648240
+          </p>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+.navBar{
+    background-color: bisque;
+    padding: 30px;
+}
+ul{
+    background-color: rgb(153, 117, 0);
+    padding: 2px;
+    list-style: none;
+}
+ul li{
+    float: left;
+}
+li a{
+    color: rgb(1, 62, 116);
+    text-align: justify;
+    padding: 10px 60px;
+    display: block;
+}
+ul li:hover{
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.f{
+    display: grid;
+    grid-template-columns: 0.4fr 7fr;
+}
+.pastries{
+    display: grid;
+    gap: 10px;
+    margin: auto;
+    max-width: 7fr;
+}
+.sub{
+    background-color: bisque;
+    border: none ;
+    cursor: pointer;
+    max-width: 200px;
+    align-content: center;
+}
+.sub:hover{
+    background-color: rgb(255, 255, 255);
+}
+.container{
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px;
+    align-items: start;
+    grid-gap: 30px;
+    justify-content: start;
+    grid-template-areas: 'h1 h2' 'f1 f2';
+    justify-items: center;
+}
+.e1{
+    background-color: aquamarine;
+    color: blue;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-area: h1;
+}
+.e2{
+    grid-area: h2;
+}
+.e3{
+    grid-area: f1;
+}
+.e4{
+    grid-area: f2;
+}
